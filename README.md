@@ -1,4 +1,4 @@
-🛒 Retail Dataset Project — Week 6 (Machine Learning Internship)
+🛒 Retail Dataset Project — Week 6 
 
 📌 Project Overview
 
