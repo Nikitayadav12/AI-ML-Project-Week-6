@@ -9,6 +9,8 @@ The main business objective:
 
 The dataset is highly imbalanced (very few cancellations). To solve this, we combine traditional ML models with synthetic data generation (CTGAN & GaussianCopula) to create a balanced dataset and improve model performance.
 
+
+
 📂 Dataset
 
 Source: Online Retail Dataset (Kaggle)[Online Retail Dataset on Kaggle]
@@ -36,6 +38,8 @@ Total quantity & invoice amount
 Time features (Hour, DayOfWeek)
 
 Cancellation flag (IsCancelled)
+
+
 
 ⚙️ Project Workflow
 
@@ -105,6 +109,7 @@ ROC curves, confusion matrices
 
 PCA visualization of synthetic vs real minority samples
 
+
 📊 Results
 
 Baseline models struggled due to imbalance.
@@ -117,27 +122,23 @@ Random Forest with tuned parameters achieved the best F1/AUC.
 
 PCA plots confirmed that synthetic samples closely resemble real minority invoices.
 
+
 🚀 How to Run
 
 Clone this repo:
-
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
-
 
 Install dependencies:
 
 pip install -r requirements.txt
 
-
 Launch Jupyter Notebook:
-
 jupyter notebook
 
 
 Open and run:
 
-Untitled14 - Jupyter Notebook.ipynb
+week 6 project - Jupyter Notebook.ipynb
+
 
 📦 Requirements
 
@@ -157,6 +158,7 @@ Install all at once:
 
 pip install pandas numpy matplotlib seaborn scikit-learn imbalanced-learn sdv cryptography paramiko
 
+
 📌 Key Learnings
 
 Handling imbalanced datasets with GANs and statistical models.
@@ -167,10 +169,13 @@ Trade-offs between deep generative models (CTGAN) and faster statistical models 
 
 Hyperparameter tuning improves performance but increases compute time.
 
+
 🏆 Conclusion
 
 This project successfully demonstrates how to apply ML + synthetic data generation to solve a real-world retail cancellation problem.
 The final model (RandomForest + CTGAN + tuning) shows improved predictive power, and the methodology is extendable to other imbalanced classification problems.
 
+
 📌 Author: Nikita Yadav
+
 📌 Internship Project — Week 6
